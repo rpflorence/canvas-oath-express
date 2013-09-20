@@ -1,0 +1,16 @@
+define([
+  {{#each modules}}'{{path}}',{{/each}}
+  {{#each helpers}}'{{path}}',{{/each}}
+  './templates',
+  './app'
+], function(
+  {{#each modules}}{{name}},{{/each}}
+  {{#each helpers}}_helper,{{/each}}
+  _templates,
+  App
+) {
+  {{#each modules}}
+  App.{{name}} = {{name}};{{/each}}
+  return App;
+});
+

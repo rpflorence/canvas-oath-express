@@ -1,0 +1,22 @@
+<h1>Cardstock</h1>
+
+<ul>
+  <li>
+    {{#if addingCourse}}
+      <form {{action createCourse on="submit"}}>
+        {{input value=newCourseName id="new-course-name"}} <button type="submit">Create</button>
+      </form>
+    {{else}}
+      <button {{action addCourse}}>Add Class</button>
+    {{/if}}
+  </li>
+  {{#each course in controller}}
+  <li>
+    {{course.name}}<br>
+    <small>{{#each course.enrollments}}{{type}}{{/each}}</small>
+  </li>
+  {{/each}}
+</ul>
+
+{{outlet}}
+

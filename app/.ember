@@ -1,0 +1,6 @@
+{
+  "modules": "cjs",
+  "appDir": "public/js",
+  "withData": false
+}
+

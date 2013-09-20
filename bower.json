@@ -1,0 +1,19 @@
+{
+  "name": "ember-app",
+  "version": "0.0.0",
+  "authors": [
+    "Ryan Florence <rpflorence@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "ember": "~1.0.0",
+    "requirejs": "~2.1.8"
+  }
+}

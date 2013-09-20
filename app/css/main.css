@@ -1,0 +1,110 @@
+/* @override http://localhost:3000/canvas2/css/main.css */
+
+/* @override http://localhost:3000/canvas2/css/main.css */
+
+@import url('components.css');
+@import url('icons.css');
+
+body {
+  font-family: helvetica, arial;
+  margin: 0;
+  color: #3B4752;
+}
+
+.app-header {
+  background: #3B4752;
+  color: #fff;
+  height: 55px;
+  position: relative;
+}
+
+.app-outlet {
+  position: absolute;
+  top: 55px;
+  width: 100%;
+  bottom: 0;
+}
+
+.app-logo {
+  display: block;
+  margin: auto;
+  width: 120px;
+  text-indent: -9999px;
+  height: 55px;
+  background: url(../img/canvas-logo.png) center center;
+  position: relative;
+  z-index: 0;
+}
+
+.app-sidebar {
+  width: 300px;
+}
+
+.app-toolbar {
+  height: 55px;
+}
+
+.global-nav {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  right: 0;
+  height: 100%;
+  width: 259px;
+  background: url(../img/fake-global-nav.png);
+}
+
+.global-nav li {
+  display: none;
+}
+
+.context-content {
+  position: absolute;
+  left: 300px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  overflow: auto;
+  padding: 20px;
+}
+
+.context-item-nav {
+  position: absolute;
+  left: 0;
+  top: 55px;
+  bottom: 0;
+  width: 300px;
+  background: #ECEEEF;
+  border-right: 1px solid #B5BBBF;
+  overflow: auto;
+}
+
+.context-item-nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.context-item-nav a {
+  font-size: 13px;
+  color: inherit;
+  text-decoration: none;
+  display: block;
+  padding: 15px 24px;
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+  border-color: transparent;
+}
+
+.context-item-nav a.active,
+.context-item-nav a:active {
+  background-color: #fafbfb;
+  border-color: #d0d5d7;
+  border-right: solid 3px #40CBFE;
+}
+
+.context-item-nav a:hover {
+  border-right: solid 3px #40CBFE;
+}
